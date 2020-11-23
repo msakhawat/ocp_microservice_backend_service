@@ -7,10 +7,10 @@ const clientId=process.env.KAFKA_CLIENT_ID ?? "blog_post",
       consumerGroup=process.env.CONSUMER_GROUP ?? "group1",
       kafkaTopic=process.env.KAFKA_TOPIC ?? "Blog_Post"
       
-const databaseServer=process.env.DATABASE_SERVER ?? "mysql",
+const databaseServer=process.env.DATABASE_INSTANCE_NAME ?? "mysql",
       databaseUser=process.env.DATABASE_USER?? "sa",
       datasePassword=process.env.DATABASE_PASSWORD?? "1234",
-      database=process.env.DATABASE ?? "blog";
+      database=process.env.DATABASE_NAME ?? "blog";
 
 run();
 async function run(){
