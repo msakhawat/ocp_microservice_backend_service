@@ -13,7 +13,7 @@ async function run(){
         console.log("Connected")
         await admin.createTopics({
             "topics":[{
-                "topic":"Blog_Post",
+                "topic":"blog-post",
                 "numPartitions": 1
             }]
         });

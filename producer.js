@@ -12,7 +12,7 @@ async function run(msg){
         await producer.connect();
         console.log("Connected")
         const result= await producer.send({
-            topic: "Blog_Post",
+            topic: "blog-post",
             messages: [
                 {
                     value: msg

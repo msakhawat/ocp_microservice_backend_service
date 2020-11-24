@@ -5,7 +5,7 @@ var mysql = require('mysql');
 const clientId=process.env.KAFKA_CLIENT_ID ?? "blog_post",
       brokers=process.env.BROKERS ?? ["kafkaserver1:9092"],
       consumerGroup=process.env.CONSUMER_GROUP ?? "group1",
-      kafkaTopic=process.env.KAFKA_TOPIC ?? "Blog_Post"
+      kafkaTopic=process.env.KAFKA_TOPIC ?? "blog-post"
       
 const databaseServer=process.env.DATABASE_INSTANCE_NAME ?? "mysql",
       databaseUser=process.env.DATABASE_USER?? "sa",
